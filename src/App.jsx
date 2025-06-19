@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+ import axios from "/vercel/path0/src/App.jsx";
 
 const App = () => {
 
@@ -15,7 +15,7 @@ const App = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let res = await axios.post('http://localhost:8000/register', [{ name: name, email: email }])
+    let res = await axios.post('https://backend-2-480s.onrender.com', [{ name: name, email: email }])
     console.log(res);
   };
 
